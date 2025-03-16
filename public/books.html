@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Digital Annotations & Book Highlights</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+    <script
+      defer
+      src="scripts.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>BookChic</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="books.html">Books</a>
+                <a href="journals.html">Journals</a>
+                <a href="bookclubs.html">Book Clubs</a>
+                <a href="tbr.html">TBR List</a>
+            </nav>
+        </div>
+      <div class="header">
+        <h1>✨ Digital Annotations & Book Highlights ✨</h1>
+        <p>Capture your favorite moments and share them with the world.</p>
+      </div>
+
+      <div class="annotation-tools">
+        <textarea
+          id="annotationInput"
+          placeholder="Add your notes or highlight text..."
+        ></textarea>
+        <div class="sticker-options">
+          <button data-sticker="❤️">❤️</button>
+          <button data-sticker="⭐">⭐</button>
+          <button data-sticker="📚">📚</button>
+          <button data-sticker="💭">💭</button>
+        </div>
+        <button id="saveAnnotation">Save Annotation</button>
+      </div>
+
+      <div class="highlights">
+        <h2>Your Annotations & Highlights</h2>
+        <div id="annotationsList"></div>
+      </div>
+
+      <div class="shareable-section">
+        <h2>📸 Shareable Highlights</h2>
+        <input
+          type="file"
+          id="uploadImage"
+          accept="image/*"
+        />
+        <div id="uploadedImages"></div>
+      </div>
+    </div>
+  </body>
+</html>
